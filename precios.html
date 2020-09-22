@@ -142,27 +142,58 @@
         </div>
       </div>
       <div class="tab-pane fade" id="tarjetas" role="tabpanel" aria-labelledby="tarjetas-tab">
-        <div class="d-flex justify-content-center">
-
-          <div class="card" style="width: 18rem;">
-            <div class="card-header">
-              Tarjetas aceptadas
+        <div class="accordion" id="accordionTarjetas">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h5 class="mb-8">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseBasica"
+                  aria-expanded="true" aria-controls="collapseBasica">
+                  Tarjeta Básica
+                </button>
+              </h5>
             </div>
-            <ul class="list-group list-group-flex">
-              <li class="list-group-item">Tarjeta Basica</li>
-              <li class="list-group-item">Tarjeta VIP</li>
-              <li class="list-group-item">Tarjeta Black</li>
-            </ul>
+            <div id="collapseBasica" class="collapse" aria-labelledby="headingOne" data-parent="#accordionTarjetas">
+              <div class="card-body">
+                Podes reservar en 3 cuotas sin interés.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingTne">
+              <h5 class="mb-8">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseVIP"
+                  aria-expanded="false" aria-controls="collapseVIP">
+                  Tarjeta VIP
+                </button>
+              </h5>
+            </div>
+            <div id="collapseVIP" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionTarjetas">
+              <div class="card-body">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere vitae, cum reiciendis, eius unde itaque similique eum aspernatur, est nam illo nostrum quaerat odit culpa?.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h5 class="mb-8">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseBlack"
+                  aria-expanded="false" aria-controls="collapseBlack">
+                  Tarjeta Black
+                </button>
+              </h5>
+            </div>
+            <div id="collapseBlack" class="collapse" aria-labelledby="headingThree" data-parent="#accordionTarjetas">
+              <div class="card-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quo obcaecati vitae necessitatibus corrupti sed totam ducimus, magnam animi amet!.
+              </div>
+            </div>
           </div>
         </div>
+
       </div>
       <div class="tab-pane fade" id="comentarios" role="tabpanel" aria-labelledby="comentarios-tab">Cometarios</div>
     </div>
   </div>
-
-
-
-
   <footer>
     <div class="row">
       <div class="col-sm-4 d-flex flex-column  ">
