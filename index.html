@@ -50,8 +50,8 @@
           aria-expanded="false" aria-controls="multiCollapse1">¿Dónde puedo reservar?</button>
       </div>
       <div class="col-sm-4">
-        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#pago"
-          aria-expanded="false" aria-controls="multiCollapse1">¿Cómo pago?</button>
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#pago" aria-expanded="false"
+          aria-controls="multiCollapse1">¿Cómo pago?</button>
       </div>
     </div>
 
@@ -88,6 +88,8 @@
             de
             fitness y una piscina al aire libre y otra cubierta.
           </p>
+          <button class="btn btn-outline-primary btn-contacto" data-toggle="modal" data-target="#contacto">
+            Contacto</button>
         </div>
         <div>
           <button class="btn btn-primary btn-reserva"> Reservar</button>
@@ -101,6 +103,8 @@
           <p class="card-text">El Frontier Hotel Rivera ofrece solárium y centro de fitness en Rivera. Este hotel
             proporciona WiFi gratuita y aparcamiento privado de pago.
           </p>
+          <button class="btn btn-outline-primary btn-contacto" data-toggle="modal" data-target="#contacto">
+            Contacto</button>
         </div>
         <div>
           <button class="btn btn-primary btn-reserva"> Reservar</button>
@@ -114,6 +118,8 @@
           <p class="card-text">El Petit Rivera Hotel, situado a 800 metros del centro de Rivera, ofrece WiFi gratis y
             alberga un restaurante. La avenida principal se encuentra a 400 metros. El desayuno buffet está incluido.
           </p>
+          <button class="btn btn-outline-primary btn-contacto" data-toggle="modal" data-target="#contacto">
+            Contacto</button>
         </div>
         <div>
           <button class="btn btn-primary btn-reserva"> Reservar</button>
@@ -128,6 +134,8 @@
             y
             ofrece alojamiento con salón compartido, aparcamiento privado gratuito, jardín y terraza.
           </p>
+          <button class="btn btn-outline-primary btn-contacto" data-toggle="modal" data-target="#contacto">
+            Contacto</button>
         </div>
         <div>
           <button class="btn btn-primary btn-reserva"> Reservar</button>
@@ -139,6 +147,8 @@
           <h4 class="card-title">Hotel La Paz</h4>
           <h5 class="card-subtitle text-muted">Perú</h5>
           <p class="card-text">Hotel ubicado en pleno centro.</p>
+          <button class="btn btn-outline-primary btn-contacto" data-toggle="modal" data-target="#contacto">
+            Contacto</button>
         </div>
         <div>
           <button class="btn btn-primary btn-reserva "> Reservar</button>
@@ -152,6 +162,8 @@
           <p class="card-text">Hotel ubicado en pleno centro. Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Voluptate omnis, ipsa tempora quaerat consectetur tempore explicabo ratione doloremque? Enim consequuntur,
             pariatur libero distinctio explicabo saepe nulla hic nihil ad unde!</p>
+          <button class="btn btn-outline-primary btn-contacto" data-toggle="modal" data-target="#contacto">
+            Contacto</button>
         </div>
         <div>
           <button class="btn btn-primary btn-reserva"> Reservar</button>
@@ -167,12 +179,104 @@
             Magni tempore sed facilis, officia laborum a delectus modi accusantium quibusdam eum animi sit repellendus
             autem debitis deserunt ratione cum quia? Dignissimos.
           </p>
+          <button class="btn btn-outline-primary btn-contacto" data-toggle="modal" data-target="#contacto">
+            Contacto</button>
         </div>
         <div>
-          <button class="btn btn-primary btn-reserva"> Reservar</button>
+          <button class="btn btn-primary btn-reserva" data-toggle="modal" data-target="#contacto1"> Reservar</button>
         </div>
       </div>
     </div>
+
+    <div class="modal fade" id="contacto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Contacto con el hotel</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="recipient-name" class="col-from-label">Tu email</label>
+                <input type="text" class="form-control" id="recipient-name">
+              </div>
+              <div class="form-group">
+                <label for="message-text" class="col-from-label">Mensaje:</label>
+                <textarea type="text" class="form-control" id="message-text"></textarea>
+              </div>
+            </form>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-success">Enviar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="modal fade" id="contacto1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Reserva tu habitacion</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-row">
+                <legend class="text-muted">Informacion de reserva </legend>
+                <div class="form-group col-sm-6">
+                  <label for="fecha">Fecha</label>
+                  <input type="date" class="form-control" id="fecha" required>
+                </div>
+                <div class="form-group col-sm-6">
+                  <label for="tiempo">Tiempo</label>
+                  <input class="form-control" id="tiempo" type="time" id="appt" name="appt" min="09:00" max="18:00"
+                    required>
+                </div>
+              </div>
+              <div class="form-row">
+                <legend class="text-muted">Asientos disponibles </legend>
+                <div class="form-group col-sm-6">
+                  <label for="adults">Adult(s)</label>
+                  <input type="text" class="form-control" id="adults" placeholder="Ingrese cuantos">
+                </div>
+                <div class="form-group col-sm-6">
+                  <label for="kids">Kids(s)</label>
+                  <input type="text" class="form-control" id="kids" placeholder="Ingrese cuantos">
+                </div>
+                <div class="form-group col-sm-12">
+                  <label for="pedidos">Pedidos especiales</label>
+                  <textarea class="form-control" name="pedidos" id="pedidos"></textarea>
+                </div>
+              </div>
+              <div class="form-row">
+                <legend class="text-muted">Informacion personal</legend>
+                <div class="form-group col-sm-6">
+                  <label for="nombre">Nombre</label>
+                  <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+                </div>
+                <div class="form-group col-sm-6">
+                  <label for="telefono">Telefono</label>
+                  <input type="text" class="form-control" id="telefono" placeholder="Ingrese su nombre">
+                </div>
+                </div>
+            </form>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-success">Enviar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 
   <footer>
