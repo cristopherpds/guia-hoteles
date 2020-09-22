@@ -82,7 +82,7 @@
       <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
         <img class="card-img-top mt-2" src="/images/hotel.png" alt="hotel img">
         <div class="card-body">
-          <h4 class="card-title">Rivera Casino & Resort</h4>
+          <h4 class="card-title" data-toggle="popover" title="Promociones" data-content="Consulta las promociones antes de que lalalalalalal">Rivera Casino & Resort</h4>
           <h5 class="card-subtitle text-muted">Uruguay</h5>
           <p class="card-text">El Rivera Casino & Resort ofrece alojamiento de lujo con WiFi gratuita, sauna, centro
             de
@@ -98,7 +98,7 @@
       <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
         <img class="card-img-top mt-2" src="/images/hotel.png" alt="hotel img">
         <div class="card-body">
-          <h4 class="card-title">Frontier Hotel Rivera</h4>
+          <h4 class="card-title" data-toggle="popover" title="Promociones" data-content="Consulta las promociones antes de que lalalalalalal">Frontier Hotel Rivera</h4>
           <h5 class="card-subtitle text-muted">Uruguay</h5>
           <p class="card-text">El Frontier Hotel Rivera ofrece solárium y centro de fitness en Rivera. Este hotel
             proporciona WiFi gratuita y aparcamiento privado de pago.
@@ -113,7 +113,7 @@
       <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
         <img class="card-img-top mt-2" src="/images/hotel.png" alt="hotel img">
         <div class="card-body">
-          <h4 class="card-title">Petit Rivera Hotel</h4>
+          <h4 class="card-title" data-toggle="popover" title="Promociones" data-content="Consulta las promociones antes de que lalalalalalal">Petit Rivera Hotel</h4>
           <h5 class="card-subtitle text-muted">Uruguay</h5>
           <p class="card-text">El Petit Rivera Hotel, situado a 800 metros del centro de Rivera, ofrece WiFi gratis y
             alberga un restaurante. La avenida principal se encuentra a 400 metros. El desayuno buffet está incluido.
@@ -128,7 +128,7 @@
       <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
         <img class="card-img-top mt-2" src="/images/hotel.png" alt="hotel img">
         <div class="card-body">
-          <h4 class="card-title">Hostería La Bordona </h4>
+          <h4 class="card-title"data-toggle="popover" title="Promociones" data-content="Consulta las promociones antes de que lalalalalalal">Hostería La Bordona </h4>
           <h5 class="card-subtitle text-muted">Uruguay</h5>
           <p class="card-text">La Hostería La Bordona se encuentra en Rivera, a 6 km del estadio Atilio Paiva Olivera,
             y
@@ -144,7 +144,7 @@
       <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
         <img class="card-img-top mt-2" src="/images/hotel.png" alt="hotel img">
         <div class="card-body">
-          <h4 class="card-title">Hotel La Paz</h4>
+          <h4 class="card-title"data-toggle="popover" title="Promociones" data-content="Consulta las promociones antes de que lalalalalalal">Hotel La Paz</h4>
           <h5 class="card-subtitle text-muted">Perú</h5>
           <p class="card-text">Hotel ubicado en pleno centro.</p>
           <button class="btn btn-outline-primary btn-contacto" data-toggle="modal" data-target="#contacto">
@@ -157,7 +157,7 @@
       <div class="card card-hotel d-flex flex-column justify-content-between ml-2 ">
         <img class="card-img-top mt-2" src="/images/hotel.png" alt="hotel img">
         <div class="card-body">
-          <h4 class="card-title">Hotel Madrid</h4>
+          <h4 class="card-title" data-toggle="popover" title="Promociones" data-content="Consulta las promociones antes de que lalalalalalal">Hotel Madrid</h4>
           <h5 class="card-subtitle text-muted">España</h5>
           <p class="card-text">Hotel ubicado en pleno centro. Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Voluptate omnis, ipsa tempora quaerat consectetur tempore explicabo ratione doloremque? Enim consequuntur,
@@ -166,7 +166,7 @@
             Contacto</button>
         </div>
         <div>
-          <button class="btn btn-primary btn-reserva"> Reservar</button>
+          <button class="btn btn-primary btn-reserva" data-toggle="popover" data-content="funciono"> Reservar</button>
         </div>
       </div>
       <div class="card card-hotel d-flex flex-column justify-content-between ml-2 ">
@@ -306,12 +306,14 @@
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
   <script src="node_modules/popper.js/dist/popper.min.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
   <script>
     $(function(){
       $("[data-toggle='tooltip']").tooltip();
+      $("[data-toggle='popover']").popover();
     });
   </script>
 </body>
