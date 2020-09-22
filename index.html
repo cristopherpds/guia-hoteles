@@ -172,9 +172,9 @@
       <div class="card card-hotel d-flex flex-column justify-content-between ml-2 ">
         <img class="card-img-top mt-2" src="/images/hotel.png" alt="hotel img">
         <div class="card-body">
-          <h4 class="card-title">Hotel San Pablo</h4>
+          <h4 class="card-title" data-toggle="tooltip" data-placement="top" title="Al reservar se gana una cena para pareja gratis!!!">Hotel San Pablo</h4>
           <h5 class="card-subtitle text-muted">Brasil</h5>
-          <p class="card-text">Hotel ubicado en pleno centro. Lorem ipsum, dolor sit amet consectetur adipisicing
+          <p class="card-text" >Hotel ubicado en pleno centro. Lorem ipsum, dolor sit amet consectetur adipisicing
             elit.
             Magni tempore sed facilis, officia laborum a delectus modi accusantium quibusdam eum animi sit repellendus
             autem debitis deserunt ratione cum quia? Dignissimos.
@@ -308,6 +308,12 @@
   <script src="node_modules/jquery/dist/jquery.min.js"></script>
   <script src="node_modules/popper.js/dist/popper.min.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <script>
+    $(function(){
+      $("[data-toggle='tooltip']").tooltip();
+    });
+  </script>
 </body>
 
 </html>
