@@ -215,7 +215,7 @@
             repellendus
             autem debitis deserunt ratione cum quia? Dignissimos.
           </p>
-          <button class="btn btn-outline-primary btn-contacto" data-toggle="modal" data-target="#contacto">
+          <button class="btn btn-outline-primary btn-contacto" data-toggle="modal" data-target="#contacto" id="btnContacto">
             Contacto</button>
         </div>
         <div>
@@ -230,7 +230,7 @@
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="exampleModalLabel">Contacto con el hotel</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="btnClose">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
@@ -352,6 +352,29 @@
       $("[data-toggle='popover']").popover();
       $('.carousel').carousel({
         interval: 2000
+      });
+
+      $('#contacto').on('show.bs.modal', (e) =>{
+        console.log('el modal contacto se esta mostrando');
+
+        $('#btnContacto').removeClass('btn-outline-success');
+        $('#btnContacto').addClass('btn-primary');
+        $('#btnContacto').prop('disabled', true);
+
+      });
+      $('#contacto').on('shown.bs.modal', (e) =>{
+        console.log('el modal contacto se mostro');
+      });
+      $('#contacto').on('hide.bs.modal', (e) =>{
+        console.log('el modal contacto se oculta');
+        $('#btnContacto').prop('disabled', false);
+        $('#btnContacto').removeClass('btn-primary');
+        $('#btnContacto').addClass('btn-outline-primary');
+        
+      });
+      $('#contacto').on('hidden.bs.modal', (e) =>{
+        console.log('el modal contacto se oculto');
+
       });
     });
   </script>
