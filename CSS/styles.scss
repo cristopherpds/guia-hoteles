@@ -1,0 +1,49 @@
+$yellow: #fffa19;
+$red:#FF0000;
+$green:#00FF00;
+
+@mixin margenes ($top, $bottom) 
+{
+    margin-top: $top;
+    margin-bottom: $bottom;
+}
+
+@mixin padding($top, $rigth) {
+    padding-top: $top;
+    padding-right: $rigth;
+    
+}
+
+.jumbotron{
+    background-color: $yellow;
+    color: black;
+    @include margenes(50px, 20px )
+}
+
+footer {
+    padding: 10px 10px 0 10px;
+    background-color: $green;
+    @include margenes(100px, 0 )
+}
+
+.card-hotel{
+    flex: 1 200px;
+    @include margenes(10px, 0 )
+}
+
+.btn-reserva{
+    width: 100%;
+    border-radius: 0;
+
+}
+.btn-contacto{
+    width: 100%;
+}
+
+.footer-addres-icon{
+    @include padding(0, 10px)
+}
+
+.tab-content{
+    @include padding(10px, 0)
+}
