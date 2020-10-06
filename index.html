@@ -6,12 +6,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" ñ>
+  <!-- build:css dist/index.css-->
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" >
   <link rel="stylesheet" href="/css/styles.css">
   <link rel="stylesheet" href="/node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
+  <!--endbuild -->
 
-  <title>Hello, world!</title>
+  <title>Guia Hoteles</title>
 </head>
 
 <body>
@@ -341,43 +342,12 @@
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <!-- build:js dist/index.js -->
   <script src="node_modules/jquery/dist/jquery.min.js"></script>
   <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-  <script src="node_modules/popper.js/dist/popper.min.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
-  <script>
-    $(function () {
-      $("[data-toggle='tooltip']").tooltip();
-      $("[data-toggle='popover']").popover();
-      $('.carousel').carousel({
-        interval: 2000
-      });
-
-      $('#contacto').on('show.bs.modal', (e) =>{
-        console.log('el modal contacto se esta mostrando');
-
-        $('#btnContacto').removeClass('btn-outline-success');
-        $('#btnContacto').addClass('btn-primary');
-        $('#btnContacto').prop('disabled', true);
-
-      });
-      $('#contacto').on('shown.bs.modal', (e) =>{
-        console.log('el modal contacto se mostro');
-      });
-      $('#contacto').on('hide.bs.modal', (e) =>{
-        console.log('el modal contacto se oculta');
-        $('#btnContacto').prop('disabled', false);
-        $('#btnContacto').removeClass('btn-primary');
-        $('#btnContacto').addClass('btn-outline-primary');
-        
-      });
-      $('#contacto').on('hidden.bs.modal', (e) =>{
-        console.log('el modal contacto se oculto');
-
-      });
-    });
-  </script>
+  <!-- endbuild -->
+  <script src="js/index.js"></script>
 </body>
 
 </html>
